@@ -12,11 +12,13 @@ BEGIN
                               (
                                     CUSTOMER_ID INT,
                                     FIRST_NAME VARCHAR(20),
+                                    LAST_NAME  VARCHAR(20),
                                     CREDIT DECIMAL(10,2),
                                     PRIMARY KEY(CUSTOMER_ID)
                               )';
     COMMIT;
   end if;
+
   SELECT count(*) into v_tabcnt
   FROM   ALL_SEQUENCES
   WHERE  SEQUENCE_NAME = 'SEQ_ACCOUNTNUMBER' and
@@ -29,4 +31,5 @@ BEGIN
                           CACHE 20';
     COMMIT;
   end if;
+
 END CT_CUSTOMER;
