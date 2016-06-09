@@ -6,7 +6,6 @@ public class BankAccount {
 	private Long	   		id;
 	private LocalDateTime 	openingDate;
 	private String    		firstname;
-	private String          lastname;
 	private Double    		amount;
 	private Double    		creditlimit;
 	
@@ -69,11 +68,5 @@ public class BankAccount {
 				+ ", creditlimit=" + creditlimit + "]\n";
 	}
 
-	public String getLastname() {
-		return lastname;
-	}
 
-	public void setLastname(String lastname) {
-		this.lastname = lastname;
-	}
 }

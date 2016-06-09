@@ -12,7 +12,6 @@ BEGIN
                               (
                                     CUSTOMER_ID INT,
                                     FIRST_NAME VARCHAR(20),
-                                    LAST_NAME  VARCHAR(20),
                                     CREDIT DECIMAL(10,2),
                                     PRIMARY KEY(CUSTOMER_ID)
                               )';
