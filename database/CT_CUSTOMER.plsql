@@ -17,7 +17,6 @@ BEGIN
                               )';
     COMMIT;
   end if;
-
   SELECT count(*) into v_tabcnt
   FROM   ALL_SEQUENCES
   WHERE  SEQUENCE_NAME = 'SEQ_ACCOUNTNUMBER' and
@@ -30,5 +29,4 @@ BEGIN
                           CACHE 20';
     COMMIT;
   end if;
-
 END CT_CUSTOMER;
